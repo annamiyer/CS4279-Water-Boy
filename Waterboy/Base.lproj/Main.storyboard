@@ -107,7 +107,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4N0-Am-CKo">
                                         <rect key="frame" x="8" y="33" width="327" height="532"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">Whatever pull the Washington Wizards hold for James lies with their Big Three of Bradley Beal, Otto Porter and John Wall.
+                                        <string key="text">Whatever pull the Washington Wizards hold for James lies with their Big Three of Bradley Beal, Otto Porter and John Wall.
 
 With those guys earning a combined $70.6 million next season, at least one must skedaddle in order to facilitate James' arrival.
 
@@ -117,7 +117,7 @@ If George Hill is the perfect point guard for James, Kyle Lowry is the more perf
 
 The former is a top-five player on the right right side of 25; the other is a point guard James wanted the Cavaliers to trade for during the Kyrie Irving debacle.
 
-The Wizards probably wouldn't care.</mutableString>
+The Wizards probably wouldn't care.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
