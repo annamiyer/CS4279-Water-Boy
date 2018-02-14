@@ -10,7 +10,6 @@
 		72C538E120217BF90045C8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C538E020217BF90045C8FF /* AppDelegate.swift */; };
 		72C538E320217BF90045C8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C538E220217BF90045C8FF /* ViewController.swift */; };
 		72C538E620217BF90045C8FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C538E420217BF90045C8FF /* Main.storyboard */; };
-		72C538E820217BF90045C8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C538E720217BF90045C8FF /* Assets.xcassets */; };
 		72C538EB20217BF90045C8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C538E920217BF90045C8FF /* LaunchScreen.storyboard */; };
 		72C538F620217BF90045C8FF /* WaterboyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C538F520217BF90045C8FF /* WaterboyTests.swift */; };
 /* End PBXBuildFile section */
@@ -30,7 +29,6 @@
 		72C538E020217BF90045C8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C538E220217BF90045C8FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72C538E520217BF90045C8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		72C538E720217BF90045C8FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../../../../../Users/andrewpokorny/Desktop/Software Engineering/CS4279-Water-Boy/Waterboy/Assets.xcassets"; sourceTree = SDKROOT; };
 		72C538EA20217BF90045C8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72C538EC20217BF90045C8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C538F120217BF90045C8FF /* WaterboyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterboyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +78,6 @@
 				72C538E020217BF90045C8FF /* AppDelegate.swift */,
 				72C538E220217BF90045C8FF /* ViewController.swift */,
 				72C538E420217BF90045C8FF /* Main.storyboard */,
-				72C538E720217BF90045C8FF /* Assets.xcassets */,
 				72C538E920217BF90045C8FF /* LaunchScreen.storyboard */,
 				72C538EC20217BF90045C8FF /* Info.plist */,
 			);
@@ -180,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C538EB20217BF90045C8FF /* LaunchScreen.storyboard in Resources */,
-				72C538E820217BF90045C8FF /* Assets.xcassets in Resources */,
 				72C538E620217BF90045C8FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
