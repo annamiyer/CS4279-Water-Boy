@@ -178,6 +178,7 @@ The Wizards probably wouldn't care.</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="kJO-m2-Gmw"/>
         <segue reference="RJ1-by-Pat"/>
     </inferredMetricsTieBreakers>
 </document>
