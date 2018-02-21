@@ -52,14 +52,6 @@
                                 <color key="textColor" red="0.30388325828244633" green="0.70250020425590143" blue="0.82946081606217614" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AER-pB-1CU">
-                                <rect key="frame" x="124" y="627" width="127" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Home"/>
-                                    <segment title="Search"/>
-                                </segments>
-                            </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="Q4R-5K-pwy">
                                 <rect key="frame" x="48" y="93" width="56" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -72,6 +64,17 @@
                                 <color key="textColor" red="0.33450350234128562" green="0.5896234126796811" blue="0.82946081606217614" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AER-pB-1CU">
+                                <rect key="frame" x="117" y="619" width="127" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Home"/>
+                                    <segment title="Search"/>
+                                </segments>
+                                <connections>
+                                    <segue destination="pq9-op-BAt" kind="show" id="MgA-3r-tbp"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -232,6 +235,44 @@ The Wizards probably wouldn't care.</string>
                                 <color key="progressTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="trackTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x7-5a-I6f">
+                                <rect key="frame" x="16" y="47" width="343" height="573"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NBA: LeBron James in Free Agency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVO-EH-NWz">
+                                        <rect key="frame" x="15" y="34" width="311" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNB-Ez-9gH">
+                                        <rect key="frame" x="8" y="33" width="327" height="532"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <string key="text">Whatever pull the Washington Wizards hold for James lies with their Big Three of Bradley Beal, Otto Porter and John Wall.
+
+With those guys earning a combined $70.6 million next season, at least one must skedaddle in order to facilitate James' arrival.
+
+Aside from the messy books, let's face it: James isn't leaving the Cavaliers for the Timberwolves.
+
+If George Hill is the perfect point guard for James, Kyle Lowry is the more perfect one.
+
+The former is a top-five player on the right right side of 25; the other is a point guard James wanted the Cavaliers to trade for during the Kyrie Irving debacle.
+
+The Wizards probably wouldn't care.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="15x-dd-D6P">
+                                        <rect key="frame" x="97" y="553" width="143" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="progressTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -239,6 +280,7 @@ The Wizards probably wouldn't care.</string>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="t8m-Ue-r12" appends="YES" id="tRX-ps-Iqc"/>
                             <outletCollection property="gestureRecognizers" destination="Z5a-4C-Fuq" appends="YES" id="iLV-Hg-kp7"/>
+                            <outletCollection property="gestureRecognizers" destination="xhO-1r-A28" appends="YES" id="NyJ-U6-3YE"/>
                         </connections>
                     </view>
                 </viewController>
@@ -251,8 +293,131 @@ The Wizards probably wouldn't care.</string>
                         <segue destination="wjT-nE-hAG" kind="show" id="sBM-N1-3T7"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="xhO-1r-A28">
+                    <connections>
+                        <segue destination="13W-E4-P8e" kind="show" id="B4w-Iz-sM1"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2171" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vd4-sA-gK5">
+            <objects>
+                <viewController id="13W-E4-P8e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MAd-cX-Icy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SSI-fJ-ZeU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Today's Report" id="Hwp-lw-3P8">
+                                        <barButtonItem key="backBarButtonItem" title="Home" id="ueX-my-A4b"/>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="hvo-5o-SvH">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YAU-Kv-EWw">
+                                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="n03-oG-bfy"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2x1-Lj-4RK" appends="YES" id="EkT-6p-w3s"/>
+                            <outletCollection property="gestureRecognizers" destination="tht-2H-uJw" appends="YES" id="fvy-rL-pgX"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEP-bh-4ZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="2x1-Lj-4RK">
+                    <connections>
+                        <segue destination="ZEj-ZJ-ZDd" kind="show" id="sUt-Qo-wmT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="tht-2H-uJw">
+                    <connections>
+                        <segue destination="7HR-By-0ID" kind="show" id="iXh-NZ-pTi"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3013" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RDB-cZ-Gcg">
+            <objects>
+                <viewController id="ZEj-ZJ-ZDd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="soS-Qp-bbP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Te0-Mu-Ve3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Today's Report" id="Tka-Cw-Anb">
+                                        <barButtonItem key="backBarButtonItem" title="Home" id="TZx-FA-crU"/>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="ZR8-SL-PrF">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uzL-Ez-qsj">
+                                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Rule of the day:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b1Y-Pu-qdv">
+                                <rect key="frame" x="16" y="114" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fun fact of the day: " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xA5-9P-Aks">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="College basketball halves are 20 minutes long" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-BE-MRR">
+                                <rect key="frame" x="16" y="152" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="LeBron James did not attend college - he went straight to the NBA" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X3W-4j-sOD">
+                                <rect key="frame" x="16" y="372" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="tC2-12-ciV"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RQb-xh-Pnk" appends="YES" id="ff0-2p-Kzq"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGK-fo-aa0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="RQb-xh-Pnk">
+                    <connections>
+                        <segue destination="13W-E4-P8e" kind="show" id="OF2-b4-Lg2"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3842.4000000000001" y="124.58770614692655"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FCs-ss-hQe">
@@ -277,7 +442,9 @@ The Wizards probably wouldn't care.</string>
         <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kJO-m2-Gmw"/>
-        <segue reference="RJ1-by-Pat"/>
+        <segue reference="B4w-Iz-sM1"/>
+        <segue reference="TxH-Y6-xBg"/>
+        <segue reference="sBM-N1-3T7"/>
+        <segue reference="986-IF-nCP"/>
     </inferredMetricsTieBreakers>
 </document>
