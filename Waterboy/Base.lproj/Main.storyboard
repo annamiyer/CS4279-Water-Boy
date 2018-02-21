@@ -19,17 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wha-bk-Cbu">
-                                <rect key="frame" x="2" y="379" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="447" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="539066452.81839097">
                                     <!--2018-01-31 04:40:52 +0000-->
                                 </date>
-                                <date key="maximumDate" timeIntervalSinceReferenceDate="1138618800">
-                                    <!--2037-01-30 11:00:00 +0000-->
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="541508400">
+                                    <!--2018-02-28 11:00:00 +0000-->
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roj-2h-44v">
-                                <rect key="frame" x="166" y="549" width="46" height="30"/>
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Go"/>
@@ -64,7 +64,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="See a past day's report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNP-Wx-lTV">
-                                <rect key="frame" x="85" y="344" width="221" height="27"/>
+                                <rect key="frame" x="79" y="412" width="221" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
@@ -121,6 +121,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4N0-Am-CKo">
                                         <rect key="frame" x="8" y="33" width="327" height="532"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
                                         <string key="text">Whatever pull the Washington Wizards hold for James lies with their Big Three of Bradley Beal, Otto Porter and John Wall.
 
 With those guys earning a combined $70.6 million next season, at least one must skedaddle in order to facilitate James' arrival.
@@ -135,6 +136,9 @@ The Wizards probably wouldn't care.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="t8m-Ue-r12" appends="YES" id="0zN-tT-Fla"/>
+                                        </connections>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="KEH-sE-lIV">
                                         <rect key="frame" x="97" y="553" width="143" height="2"/>
@@ -150,13 +154,74 @@ The Wizards probably wouldn't care.</string>
                         <viewLayoutGuide key="safeArea" id="xBr-oT-7Nu"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="NeF-XZ-Xbh" appends="YES" id="TjD-ra-aT2"/>
+                            <outletCollection property="gestureRecognizers" destination="c3t-5B-fri" appends="YES" id="OUU-5i-ugp"/>
                         </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3w-oR-i3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pinchGestureRecognizer id="NeF-XZ-Xbh"/>
+                <swipeGestureRecognizer direction="left" id="c3t-5B-fri">
+                    <connections>
+                        <segue destination="7HR-By-0ID" kind="show" id="TxH-Y6-xBg"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1431" y="133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gUC-iW-eON">
+            <objects>
+                <viewController id="7HR-By-0ID" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3TU-kz-Clr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Be-gS-8Mn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Today's Report" id="kvn-o4-KUV">
+                                        <barButtonItem key="backBarButtonItem" title="Home" id="wev-MC-MoM"/>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="UQE-KM-OZN">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nis-f8-IfN">
+                                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="986-IF-nCP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="UaG-XV-umu">
+                                <rect key="frame" x="116" y="622" width="143" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="trackTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="bzR-bp-hpO"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="t8m-Ue-r12" appends="YES" id="tRX-ps-Iqc"/>
+                            <outletCollection property="gestureRecognizers" destination="Z5a-4C-Fuq" appends="YES" id="iLV-Hg-kp7"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jF-zm-444" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="t8m-Ue-r12">
+                    <rectEdge key="edges" left="YES" right="YES"/>
+                </screenEdgePanGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Z5a-4C-Fuq">
+                    <connections>
+                        <segue destination="wjT-nE-hAG" kind="show" id="sBM-N1-3T7"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2171" y="126"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FCs-ss-hQe">
@@ -179,6 +244,6 @@ The Wizards probably wouldn't care.</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="kJO-m2-Gmw"/>
-        <segue reference="RJ1-by-Pat"/>
+        <segue reference="986-IF-nCP"/>
     </inferredMetricsTieBreakers>
 </document>
