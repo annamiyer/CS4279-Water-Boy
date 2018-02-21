@@ -223,20 +223,14 @@ The Wizards probably wouldn't care.</string>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="986-IF-nCP"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="s3e-4H-0Fa"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="UaG-XV-umu">
-                                <rect key="frame" x="116" y="622" width="143" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="progressTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="trackTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </progressView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x7-5a-I6f">
-                                <rect key="frame" x="16" y="47" width="343" height="573"/>
+                                <rect key="frame" x="16" y="68" width="343" height="573"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NBA: LeBron James in Free Agency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVO-EH-NWz">
@@ -321,6 +315,9 @@ The Wizards probably wouldn't care.</string>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="DOc-ZN-JdD"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -443,8 +440,8 @@ The Wizards probably wouldn't care.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="B4w-Iz-sM1"/>
-        <segue reference="TxH-Y6-xBg"/>
+        <segue reference="iXh-NZ-pTi"/>
         <segue reference="sBM-N1-3T7"/>
-        <segue reference="986-IF-nCP"/>
+        <segue reference="DOc-ZN-JdD"/>
     </inferredMetricsTieBreakers>
 </document>
