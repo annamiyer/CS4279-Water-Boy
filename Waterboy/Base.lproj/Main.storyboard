@@ -145,11 +145,9 @@ The Wizards probably wouldn't care.</string>
                                             <outletCollection property="gestureRecognizers" destination="t8m-Ue-r12" appends="YES" id="0zN-tT-Fla"/>
                                         </connections>
                                     </label>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="KEH-sE-lIV">
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="KEH-sE-lIV">
                                         <rect key="frame" x="97" y="553" width="143" height="2"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="progressTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="trackTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
                                 </subviews>
                             </scrollView>
@@ -230,10 +228,10 @@ The Wizards probably wouldn't care.</string>
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x7-5a-I6f">
-                                <rect key="frame" x="16" y="68" width="343" height="573"/>
+                                <rect key="frame" x="16" y="58" width="343" height="573"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NBA: LeBron James in Free Agency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVO-EH-NWz">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Russia Olympic Ban Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVO-EH-NWz">
                                         <rect key="frame" x="15" y="34" width="311" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -244,17 +242,12 @@ The Wizards probably wouldn't care.</string>
                                         <rect key="frame" x="8" y="33" width="327" height="532"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
-                                        <string key="text">Whatever pull the Washington Wizards hold for James lies with their Big Three of Bradley Beal, Otto Porter and John Wall.
-
-With those guys earning a combined $70.6 million next season, at least one must skedaddle in order to facilitate James' arrival.
-
-Aside from the messy books, let's face it: James isn't leaving the Cavaliers for the Timberwolves.
-
-If George Hill is the perfect point guard for James, Kyle Lowry is the more perfect one.
-
-The former is a top-five player on the right right side of 25; the other is a point guard James wanted the Cavaliers to trade for during the Kyrie Irving debacle.
-
-The Wizards probably wouldn't care.</string>
+                                        <mutableString key="text">The International Olympic Committee announced Wednesday that Russia has been reinstated for future editions of the Games after being banned from the 2018 Winter Olympics in Pyeongchang, South Korea, following a widespread doping scandal at the 2014 Sochi Games.
+However, two Russian athletes, curler Alexander Krushelnitsky and bobsledder Nadezhda Sergeeva, failed doping tests during the Games.
+Although Russia was formally banned from this month's Games, 168 athletes from the nation were still allowed to compete under the neutral distinction of Olympic Athletes from Russia.
+Russian Olympic Committee president Alexander Zhukov said the news was of the "utmost importance" on the country's state TV, according to the Guardian.
+"Therefore, as stated in the Executive Board decision of 25th February the suspension of the Russian Olympic Committee is automatically lifted with immediate effect."
+"The IOC can confirm that all the remaining results are negative.</mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -262,8 +255,7 @@ The Wizards probably wouldn't care.</string>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="15x-dd-D6P">
                                         <rect key="frame" x="97" y="553" width="143" height="2"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="progressTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="trackTintColor" red="0.40207365140000001" green="0.65432656609999995" blue="0.87700372410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
                                 </subviews>
                             </scrollView>
@@ -439,9 +431,9 @@ The Wizards probably wouldn't care.</string>
         <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B4w-Iz-sM1"/>
+        <segue reference="OF2-b4-Lg2"/>
         <segue reference="iXh-NZ-pTi"/>
         <segue reference="sBM-N1-3T7"/>
-        <segue reference="DOc-ZN-JdD"/>
+        <segue reference="s3e-4H-0Fa"/>
     </inferredMetricsTieBreakers>
 </document>
