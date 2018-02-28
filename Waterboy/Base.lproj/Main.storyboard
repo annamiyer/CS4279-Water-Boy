@@ -36,6 +36,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Go"/>
+                                <connections>
+                                    <segue destination="wjT-nE-hAG" kind="show" id="x1g-P3-dc9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6e-gr-3oX">
                                 <rect key="frame" x="116" y="175" width="156" height="30"/>
@@ -56,11 +59,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="Q4R-5K-pwy">
-                                <rect key="frame" x="48" y="93" width="56" height="48"/>
+                                <rect key="frame" x="70" y="93" width="56" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waterboy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFl-vQ-vZG">
-                                <rect key="frame" x="117" y="102" width="141" height="31"/>
+                                <rect key="frame" x="139" y="102" width="141" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -484,9 +487,9 @@ I'm ready to make my mark.</string>
         <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OF2-b4-Lg2"/>
+        <segue reference="B4w-Iz-sM1"/>
         <segue reference="TxH-Y6-xBg"/>
         <segue reference="kJO-m2-Gmw"/>
-        <segue reference="RJ1-by-Pat"/>
+        <segue reference="s3e-4H-0Fa"/>
     </inferredMetricsTieBreakers>
 </document>
