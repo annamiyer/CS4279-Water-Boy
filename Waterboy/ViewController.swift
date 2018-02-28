@@ -10,11 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var datePicker: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       
+        var components = DateComponents()
+        components.day = -14
+        let minDate = Calendar.current.date(byAdding: components, to: Date())
+        
+        components.day = 0
+        let maxDate = Calendar.current.date(byAdding: components, to: Date())
+        
+        datePicker.minimumDate = minDate
+        datePicker.maximumDate = maxDate
+        
+    
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

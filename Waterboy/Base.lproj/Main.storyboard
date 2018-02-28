@@ -27,6 +27,9 @@
                                 <date key="minimumDate" timeIntervalSinceReferenceDate="536497200">
                                     <!--2018-01-01 11:00:00 +0000-->
                                 </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                    <!--2037-12-31 11:00:00 +0000-->
+                                </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roj-2h-44v">
                                 <rect key="frame" x="164" y="485" width="46" height="30"/>
@@ -80,6 +83,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="P9z-zG-BfT"/>
+                    <connections>
+                        <outlet property="datePicker" destination="wha-bk-Cbu" id="Vfx-jw-26t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,12 +252,12 @@ The Wizards probably wouldn't care.</string>
                                         <rect key="frame" x="8" y="33" width="327" height="532"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
-                                        <mutableString key="text">The International Olympic Committee announced Wednesday that Russia has been reinstated for future editions of the Games after being banned from the 2018 Winter Olympics in Pyeongchang, South Korea, following a widespread doping scandal at the 2014 Sochi Games.
+                                        <string key="text">The International Olympic Committee announced Wednesday that Russia has been reinstated for future editions of the Games after being banned from the 2018 Winter Olympics in Pyeongchang, South Korea, following a widespread doping scandal at the 2014 Sochi Games.
 However, two Russian athletes, curler Alexander Krushelnitsky and bobsledder Nadezhda Sergeeva, failed doping tests during the Games.
 Although Russia was formally banned from this month's Games, 168 athletes from the nation were still allowed to compete under the neutral distinction of Olympic Athletes from Russia.
 Russian Olympic Committee president Alexander Zhukov said the news was of the "utmost importance" on the country's state TV, according to the Guardian.
 "Therefore, as stated in the Executive Board decision of 25th February the suspension of the Russian Olympic Committee is automatically lifted with immediate effect."
-"The IOC can confirm that all the remaining results are negative.</mutableString>
+"The IOC can confirm that all the remaining results are negative.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -478,10 +484,9 @@ I'm ready to make my mark.</string>
         <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sUt-Qo-wmT"/>
         <segue reference="OF2-b4-Lg2"/>
         <segue reference="TxH-Y6-xBg"/>
-        <segue reference="sBM-N1-3T7"/>
+        <segue reference="kJO-m2-Gmw"/>
         <segue reference="RJ1-by-Pat"/>
     </inferredMetricsTieBreakers>
 </document>
