@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Unirest
 
 class ViewController: UIViewController {
 
@@ -15,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       
+        
         var components = DateComponents()
         components.day = -14
         let minDate = Calendar.current.date(byAdding: components, to: Date())
@@ -26,6 +27,31 @@ class ViewController: UIViewController {
         datePicker.minimumDate = minDate
         datePicker.maximumDate = maxDate
         
+        //Alamofire.request("https://codewithchris.com/code/afsample.json")
+        
+        Alamofire.request("https://codewithchris.com/code/afsample.json").responseJSON { (response ) -> Void in
+            
+            if let JSON = response.result.value {
+                print(JSON)
+            }
+        }
+        
+        let parameters = [
+            "sentnum" : "5",
+            "url" : "http://en.wikipedia.org/wiki/Automatic_summarization"]
+        let headers = [
+            "X-Mashape-Key" : "m3vVRZY6vmmshmUO7xssD6q3zp0Zp1pxzmnjsn88Sn5M71YIJo",
+            "Content-Type" : "application/x-www-form-urlencoded",
+            "Accept" : "application/json"]
+        let apiToContact = "https://textanalysis-text-summarization.p.mashape.com/text-summarizer-url"
+        Alamofire.request(apiToContact, parameters:parameters, headers:headers).responseJSON {
+             (responseURL) -> Void in
+            if let JSON = responseURL.result.value {
+                print(JSON)
+            }
+        }
+        
+
     
     }
 
