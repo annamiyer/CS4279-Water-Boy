@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.7.0)
+  - Reductio (1.3.0)
   - Unirest (1.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - Reductio
   - Unirest (~> 1.1.3)
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Reductio: f23936b606be6cd062db77f9499e527fd13100b5
   Unirest: 5e4d93eaf32463bf619a4ecd3bbc8c32acf21eac
 
-PODFILE CHECKSUM: 6be901ae664045433c153df44c33bfe6142cd63e
+PODFILE CHECKSUM: b4b5b08c814a220b33ff963d43002752547e1e82
 
 COCOAPODS: 1.4.0
