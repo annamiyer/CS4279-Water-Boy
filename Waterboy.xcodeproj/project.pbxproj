@@ -7,15 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342F4D7D205F76FD008F0697 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342F4D6F205F7460008F0697 /* Alamofire.framework */; };
+		342F4D7E205F76FD008F0697 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 342F4D6F205F7460008F0697 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		342F4D81205F76FD008F0697 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342F4D77205F7460008F0697 /* Alamofire.framework */; };
+		342F4D82205F76FD008F0697 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 342F4D77205F7460008F0697 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7274EFBB203E0F5B0012F276 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7274EFBA203E0F5B0012F276 /* Media.xcassets */; };
 		72C538E120217BF90045C8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C538E020217BF90045C8FF /* AppDelegate.swift */; };
 		72C538E320217BF90045C8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C538E220217BF90045C8FF /* ViewController.swift */; };
 		72C538E620217BF90045C8FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C538E420217BF90045C8FF /* Main.storyboard */; };
 		72C538EB20217BF90045C8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C538E920217BF90045C8FF /* LaunchScreen.storyboard */; };
 		72C538F620217BF90045C8FF /* WaterboyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C538F520217BF90045C8FF /* WaterboyTests.swift */; };
+		A57D23DB7B47B763AC5FFF03 /* Pods_Waterboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F908F023A6F6CE82A8CD40 /* Pods_Waterboy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		342F4D6E205F7460008F0697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342F4D63205F7460008F0697 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		342F4D70205F7460008F0697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342F4D63205F7460008F0697 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		342F4D72205F7460008F0697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342F4D63205F7460008F0697 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		342F4D74205F7460008F0697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342F4D63205F7460008F0697 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		342F4D76205F7460008F0697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342F4D63205F7460008F0697 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		342F4D78205F7460008F0697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342F4D63205F7460008F0697 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		342F4D7A205F7460008F0697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342F4D63205F7460008F0697 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		342F4D7F205F76FD008F0697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342F4D63205F7460008F0697 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		342F4D83205F76FD008F0697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342F4D63205F7460008F0697 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CF626EE1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
 		72C538F220217BF90045C8FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 72C538D520217BF80045C8FF /* Project object */;
@@ -25,7 +93,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		342F4D85205F76FE008F0697 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				342F4D7E205F76FD008F0697 /* Alamofire.framework in Embed Frameworks */,
+				342F4D82205F76FD008F0697 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		342F4D63205F7460008F0697 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+		3B7299D95D864FCF4B508380 /* Pods-Waterboy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waterboy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Waterboy/Pods-Waterboy.release.xcconfig"; sourceTree = "<group>"; };
+		4F40D6579212B313807A1E31 /* Pods-Waterboy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waterboy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Waterboy/Pods-Waterboy.debug.xcconfig"; sourceTree = "<group>"; };
 		7274EFBA203E0F5B0012F276 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		72C538DD20217BF90045C8FF /* Waterboy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waterboy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C538E020217BF90045C8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +122,7 @@
 		72C538F120217BF90045C8FF /* WaterboyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterboyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C538F520217BF90045C8FF /* WaterboyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterboyTests.swift; sourceTree = "<group>"; };
 		72C538F720217BF90045C8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F908F023A6F6CE82A8CD40 /* Pods_Waterboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Waterboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +130,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57D23DB7B47B763AC5FFF03 /* Pods_Waterboy.framework in Frameworks */,
+				342F4D81205F76FD008F0697 /* Alamofire.framework in Frameworks */,
+				342F4D7D205F76FD008F0697 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +146,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		342F4D64205F7460008F0697 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				342F4D6F205F7460008F0697 /* Alamofire.framework */,
+				342F4D71205F7460008F0697 /* Alamofire iOS Tests.xctest */,
+				342F4D73205F7460008F0697 /* Alamofire.framework */,
+				342F4D75205F7460008F0697 /* Alamofire macOS Tests.xctest */,
+				342F4D77205F7460008F0697 /* Alamofire.framework */,
+				342F4D79205F7460008F0697 /* Alamofire tvOS Tests.xctest */,
+				342F4D7B205F7460008F0697 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		72C538D420217BF80045C8FF = {
 			isa = PBXGroup;
 			children = (
 				72C538DF20217BF90045C8FF /* Waterboy */,
 				72C538F420217BF90045C8FF /* WaterboyTests */,
 				72C538DE20217BF90045C8FF /* Products */,
+				D205B3FBD2C483CD7EC2998E /* Pods */,
+				7973FE90FFBE73596721E183 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +188,7 @@
 				72C538E420217BF90045C8FF /* Main.storyboard */,
 				72C538E920217BF90045C8FF /* LaunchScreen.storyboard */,
 				72C538EC20217BF90045C8FF /* Info.plist */,
+				342F4D63205F7460008F0697 /* Alamofire.xcodeproj */,
 				7274EFBA203E0F5B0012F276 /* Media.xcassets */,
 			);
 			path = Waterboy;
@@ -96,6 +203,23 @@
 			path = WaterboyTests;
 			sourceTree = "<group>";
 		};
+		7973FE90FFBE73596721E183 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9F908F023A6F6CE82A8CD40 /* Pods_Waterboy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D205B3FBD2C483CD7EC2998E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F40D6579212B313807A1E31 /* Pods-Waterboy.debug.xcconfig */,
+				3B7299D95D864FCF4B508380 /* Pods-Waterboy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,13 +227,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72C538FA20217BF90045C8FF /* Build configuration list for PBXNativeTarget "Waterboy" */;
 			buildPhases = (
+				905BB528583B37F9B8AA87B2 /* [CP] Check Pods Manifest.lock */,
 				72C538D920217BF80045C8FF /* Sources */,
 				72C538DA20217BF80045C8FF /* Frameworks */,
 				72C538DB20217BF80045C8FF /* Resources */,
+				54A91AAC50B2EF190C3505D6 /* [CP] Embed Pods Frameworks */,
+				1981F3B2135E34AC5B84BEA4 /* [CP] Copy Pods Resources */,
+				342F4D85205F76FE008F0697 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				342F4D80205F76FD008F0697 /* PBXTargetDependency */,
+				342F4D84205F76FD008F0697 /* PBXTargetDependency */,
 			);
 			name = Waterboy;
 			productName = Waterboy;
@@ -166,6 +296,12 @@
 			mainGroup = 72C538D420217BF80045C8FF;
 			productRefGroup = 72C538DE20217BF90045C8FF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 342F4D64205F7460008F0697 /* Products */;
+					ProjectRef = 342F4D63205F7460008F0697 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				72C538DC20217BF80045C8FF /* Waterboy */,
@@ -173,6 +309,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		342F4D6F205F7460008F0697 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 342F4D6E205F7460008F0697 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		342F4D71205F7460008F0697 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 342F4D70205F7460008F0697 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		342F4D73205F7460008F0697 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 342F4D72205F7460008F0697 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		342F4D75205F7460008F0697 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 342F4D74205F7460008F0697 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		342F4D77205F7460008F0697 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 342F4D76205F7460008F0697 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		342F4D79205F7460008F0697 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 342F4D78205F7460008F0697 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		342F4D7B205F7460008F0697 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 342F4D7A205F7460008F0697 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		72C538DB20217BF80045C8FF /* Resources */ = {
@@ -193,6 +381,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1981F3B2135E34AC5B84BEA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Waterboy/Pods-Waterboy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54A91AAC50B2EF190C3505D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Waterboy/Pods-Waterboy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Waterboy/Pods-Waterboy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		905BB528583B37F9B8AA87B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Waterboy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72C538D920217BF80045C8FF /* Sources */ = {
@@ -215,6 +457,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		342F4D80205F76FD008F0697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 342F4D7F205F76FD008F0697 /* PBXContainerItemProxy */;
+		};
+		342F4D84205F76FD008F0697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire tvOS";
+			targetProxy = 342F4D83205F76FD008F0697 /* PBXContainerItemProxy */;
+		};
 		72C538F320217BF90045C8FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 72C538DC20217BF80045C8FF /* Waterboy */;
@@ -351,7 +603,9 @@
 		};
 		72C538FB20217BF90045C8FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F40D6579212B313807A1E31 /* Pods-Waterboy.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Waterboy/Info.plist;
@@ -365,7 +619,9 @@
 		};
 		72C538FC20217BF90045C8FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7299D95D864FCF4B508380 /* Pods-Waterboy.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Waterboy/Info.plist;

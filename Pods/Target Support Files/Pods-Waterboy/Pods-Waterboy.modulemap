@@ -1,0 +1,6 @@
+framework module Pods_Waterboy {
+  umbrella header "Pods-Waterboy-umbrella.h"
+
+  export *
+  module * { export * }
+}

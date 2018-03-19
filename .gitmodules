@@ -1,3 +1,6 @@
 [submodule "Waterboy/Waterboy/unirest-obj-c"]
 	path = Waterboy/Waterboy/unirest-obj-c
 	url = https://github.com/Kong/unirest-obj-c.git
+[submodule "Alamofire"]
+	path = Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
