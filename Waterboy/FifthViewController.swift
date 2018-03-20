@@ -10,12 +10,25 @@ import UIKit
 
 class FifthViewController: UIViewController {
 
+    @IBOutlet weak var ruleOfTheDay: UILabel!
+    @IBOutlet weak var funFact: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        ruleOfTheDay.numberOfLines = 0
+        funFact.numberOfLines = 0
+        ruleOfTheDay.adjustsFontSizeToFitWidth = true
+        funFact.adjustsFontSizeToFitWidth = true
+        var rule: String
+        rule = "College basketball plays two, 20-minute halves"
+        ruleOfTheDay.text = rule
+        var fact: String
+        fact = "Barry Bonds is the all-time homerun leader."
+        funFact.text = fact
 
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

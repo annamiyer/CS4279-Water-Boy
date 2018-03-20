@@ -25,11 +25,6 @@ class SecondViewController: UIViewController {
             firstStory.text = phrases.description
             print(phrases)
         }
-        //var text3 = text2.description
-        //firstStory.text = "Need to figure out how to put the story here"
-        
-        
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

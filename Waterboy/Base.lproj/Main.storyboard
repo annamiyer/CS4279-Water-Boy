@@ -167,7 +167,7 @@
                                         <rect key="frame" x="273" y="21" width="62" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIK-hl-qLD">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIK-hl-qLD">
                                         <rect key="frame" x="16" y="76" width="311" height="478"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -266,20 +266,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNB-Ez-9gH">
-                                        <rect key="frame" x="8" y="33" width="327" height="532"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <string key="text">The International Olympic Committee announced Wednesday that Russia has been reinstated for future editions of the Games after being banned from the 2018 Winter Olympics in Pyeongchang, South Korea, following a widespread doping scandal at the 2014 Sochi Games.
-However, two Russian athletes, curler Alexander Krushelnitsky and bobsledder Nadezhda Sergeeva, failed doping tests during the Games.
-Although Russia was formally banned from this month's Games, 168 athletes from the nation were still allowed to compete under the neutral distinction of Olympic Athletes from Russia.
-Russian Olympic Committee president Alexander Zhukov said the news was of the "utmost importance" on the country's state TV, according to the Guardian.
-"Therefore, as stated in the Executive Board decision of 25th February the suspension of the Russian Olympic Committee is automatically lifted with immediate effect."
-"The IOC can confirm that all the remaining results are negative.</string>
-                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="15x-dd-D6P">
                                         <rect key="frame" x="97" y="553" width="143" height="2"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -289,6 +275,13 @@ Russian Olympic Committee president Alexander Zhukov said the news was of the "u
                                         <rect key="frame" x="258" y="0.0" width="68" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEu-gt-vOY">
+                                        <rect key="frame" x="15" y="85" width="311" height="488"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -301,6 +294,9 @@ Russian Olympic Committee president Alexander Zhukov said the news was of the "u
                             <outletCollection property="gestureRecognizers" destination="xhO-1r-A28" appends="YES" id="NyJ-U6-3YE"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="secondStory" destination="bEu-gt-vOY" id="yhW-a7-jVI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jF-zm-444" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="t8m-Ue-r12">
@@ -361,21 +357,10 @@ Russian Olympic Committee president Alexander Zhukov said the news was of the "u
                                 <rect key="frame" x="16" y="67" width="84" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIL-oO-aVc">
-                                <rect key="frame" x="16" y="101" width="343" height="520"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Third Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxG-Wt-obU">
+                                <rect key="frame" x="16" y="148" width="343" height="475"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">"I'm still working," Bryant told 105.3 The Fan, per Jon Machota of the Dallas Morning News.
-
-Dez Bryant's future in Dallas is anything but clear, the Rams make a heist in broad daylight, and Tom Brady's combine troubles.
-
-There are few teams in the NFL, if any, that believe Dez Bryant is still a major force at receiver.
-
-Everybody that ain't with Dez Bryant, they can kiss my ass."
-
-All that and more in this week's 10-Point Stance.
-
-I'm ready to make my mark.</string>
-                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -388,6 +373,9 @@ I'm ready to make my mark.</string>
                             <outletCollection property="gestureRecognizers" destination="tht-2H-uJw" appends="YES" id="fvy-rL-pgX"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="thirdStory" destination="ZxG-Wt-obU" id="mIe-Wn-eu5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gEP-bh-4ZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="2x1-Lj-4RK">
@@ -441,34 +429,43 @@ I'm ready to make my mark.</string>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="College basketball halves are 20 minutes long" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-BE-MRR">
-                                <rect key="frame" x="16" y="152" width="343" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.21251369234704365" green="0.25890654279949676" blue="0.66967504389695431" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="LeBron James did not attend college - he went straight to the NBA" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X3W-4j-sOD">
-                                <rect key="frame" x="16" y="372" width="343" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.26644906054023942" green="0.61434484704127001" blue="0.8902096251152285" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="p8k-C6-IZm">
-                                <rect key="frame" x="97" y="508" width="181" height="139"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="p8k-C6-IZm">
+                                <rect key="frame" x="97" y="498" width="181" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="Fpv-HX-L4k"/>
+                                    <constraint firstAttribute="height" constant="149" id="ldu-rF-olV"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBL-nb-O5m">
+                                <rect key="frame" x="16" y="190" width="343" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h45-Oc-M93">
+                                <rect key="frame" x="16" y="390" width="343" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="p8k-C6-IZm" firstAttribute="centerX" secondItem="soS-Qp-bbP" secondAttribute="centerX" id="Rpr-qm-a9i"/>
+                            <constraint firstItem="p8k-C6-IZm" firstAttribute="centerY" secondItem="soS-Qp-bbP" secondAttribute="centerY" constant="239" id="r6g-Yv-o8X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tC2-12-ciV"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="RQb-xh-Pnk" appends="YES" id="ff0-2p-Kzq"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="funFact" destination="h45-Oc-M93" id="2HU-FI-qju"/>
+                        <outlet property="ruleOfTheDay" destination="rBL-nb-O5m" id="b5R-7C-wr7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGK-fo-aa0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="RQb-xh-Pnk">
@@ -502,9 +499,10 @@ I'm ready to make my mark.</string>
         <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="sUt-Qo-wmT"/>
         <segue reference="OF2-b4-Lg2"/>
-        <segue reference="TxH-Y6-xBg"/>
-        <segue reference="x1g-P3-dc9"/>
-        <segue reference="RJ1-by-Pat"/>
+        <segue reference="iXh-NZ-pTi"/>
+        <segue reference="sBM-N1-3T7"/>
+        <segue reference="DOc-ZN-JdD"/>
     </inferredMetricsTieBreakers>
 </document>
