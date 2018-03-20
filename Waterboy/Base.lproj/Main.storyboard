@@ -29,9 +29,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wha-bk-Cbu">
-                                <rect key="frame" x="0.0" y="293" width="375" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wha-bk-Cbu">
+                                <rect key="frame" x="28" y="336" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="539066452.81839097">
                                     <!--2018-01-31 04:40:52 +0000-->
                                 </date>
@@ -42,18 +41,8 @@
                                     <!--2037-12-31 11:00:00 +0000-->
                                 </date>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roj-2h-44v">
-                                <rect key="frame" x="164" y="485" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
-                                <state key="normal" title="Go"/>
-                                <connections>
-                                    <segue destination="wjT-nE-hAG" kind="show" id="x1g-P3-dc9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6e-gr-3oX">
-                                <rect key="frame" x="116" y="175" width="164" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6e-gr-3oX">
+                                <rect key="frame" x="116.5" y="185" width="142" height="37"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="21"/>
                                 <state key="normal" title="Today's Report">
                                     <color key="titleColor" red="0.35466441606158988" green="0.66898451586834162" blue="0.80765396171283221" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -62,28 +51,28 @@
                                     <segue destination="wjT-nE-hAG" kind="show" id="kJO-m2-Gmw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="See a past day's report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNP-Wx-lTV">
-                                <rect key="frame" x="70" y="233" width="265" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See a past day's report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNP-Wx-lTV">
+                                <rect key="frame" x="73" y="301.5" width="229" height="26"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="22"/>
                                 <color key="textColor" red="0.30388325828244633" green="0.70250020425590143" blue="0.82946081606217614" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="Q4R-5K-pwy">
-                                <rect key="frame" x="70" y="93" width="56" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="Q4R-5K-pwy">
+                                <rect key="frame" x="17.5" y="40.5" width="99" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="lDw-p7-cwa"/>
+                                    <constraint firstAttribute="width" constant="99" id="t6K-bT-88l"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waterboy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFl-vQ-vZG">
-                                <rect key="frame" x="139" y="102" width="166" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waterboy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFl-vQ-vZG">
+                                <rect key="frame" x="121.5" y="72" width="133" height="36.5"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="31"/>
                                 <color key="textColor" red="0.33450350234128562" green="0.5896234126796811" blue="0.82946081606217614" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AER-pB-1CU">
-                                <rect key="frame" x="117" y="619" width="127" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AER-pB-1CU">
+                                <rect key="frame" x="130" y="619" width="115" height="29"/>
                                 <segments>
                                     <segment title="Home"/>
                                     <segment title="Search"/>
@@ -92,8 +81,35 @@
                                     <segue destination="pq9-op-BAt" kind="show" id="MgA-3r-tbp"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roj-2h-44v">
+                                <rect key="frame" x="172.5" y="533" width="30" height="32"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <segue destination="wjT-nE-hAG" kind="show" id="x1g-P3-dc9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cFl-vQ-vZG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-243.5" id="0B6-UX-bV3"/>
+                            <constraint firstItem="roj-2h-44v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DHJ-d1-Xji"/>
+                            <constraint firstItem="H6e-gr-3oX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-130" id="FHR-J4-ARp"/>
+                            <constraint firstItem="wha-bk-Cbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JaM-iU-yHb"/>
+                            <constraint firstItem="vNP-Wx-lTV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-19" id="K5g-Ex-5zM"/>
+                            <constraint firstItem="roj-2h-44v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="229.5" id="Opy-FC-vvN"/>
+                            <constraint firstItem="Q4R-5K-pwy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120.5" id="OuA-7l-qLb"/>
+                            <constraint firstItem="AER-pB-1CU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SqZ-sx-tbn"/>
+                            <constraint firstItem="wha-bk-Cbu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="110.5" id="VWI-tx-QLa"/>
+                            <constraint firstItem="roj-2h-44v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adl-Rf-aWV"/>
+                            <constraint firstItem="roj-2h-44v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="239.5" id="kYz-2y-aEF"/>
+                            <constraint firstItem="Q4R-5K-pwy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-243.5" id="l0W-lr-PqX"/>
+                            <constraint firstItem="H6e-gr-3oX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q6T-Hy-k1M"/>
+                            <constraint firstItem="roj-2h-44v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s9f-BM-11d"/>
+                            <constraint firstItem="vNP-Wx-lTV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sQe-sE-fdx"/>
+                            <constraint firstItem="cFl-vQ-vZG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ttU-9s-AZ3"/>
+                            <constraint firstItem="roj-2h-44v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="215.5" id="zsg-HX-TcH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="P9z-zG-BfT"/>
@@ -108,7 +124,7 @@
         <!--Current Report Page-->
         <scene sceneID="WAH-DY-yEk">
             <objects>
-                <viewController title="Current Report Page" id="wjT-nE-hAG" sceneMemberID="viewController">
+                <viewController title="Current Report Page" id="wjT-nE-hAG" customClass="SecondViewController" customModule="Waterboy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mU1-FK-1eC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,27 +167,12 @@
                                         <rect key="frame" x="273" y="21" width="62" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4N0-Am-CKo">
-                                        <rect key="frame" x="8" y="41" width="327" height="532"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIK-hl-qLD">
+                                        <rect key="frame" x="16" y="76" width="311" height="478"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <string key="text">Whatever pull the Washington Wizards hold for James lies with their Big Three of Bradley Beal, Otto Porter and John Wall.
-
-With those guys earning a combined $70.6 million next season, at least one must skedaddle in order to facilitate James' arrival.
-
-Aside from the messy books, let's face it: James isn't leaving the Cavaliers for the Timberwolves.
-
-If George Hill is the perfect point guard for James, Kyle Lowry is the more perfect one.
-
-The former is a top-five player on the right right side of 25; the other is a point guard James wanted the Cavaliers to trade for during the Kyrie Irving debacle.
-
-The Wizards probably wouldn't care.</string>
-                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="t8m-Ue-r12" appends="YES" id="0zN-tT-Fla"/>
-                                        </connections>
                                     </label>
                                 </subviews>
                             </scrollView>
@@ -184,6 +185,9 @@ The Wizards probably wouldn't care.</string>
                             <outletCollection property="gestureRecognizers" destination="c3t-5B-fri" appends="YES" id="OUU-5i-ugp"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="firstStory" destination="MIK-hl-qLD" id="67t-Jy-Vo8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3w-oR-i3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pinchGestureRecognizer id="NeF-XZ-Xbh"/>
@@ -224,10 +228,10 @@ The Wizards probably wouldn't care.</string>
             </objects>
             <point key="canvasLocation" x="1397.5999999999999" y="802.848575712144"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="gUC-iW-eON">
             <objects>
-                <viewController id="7HR-By-0ID" sceneMemberID="viewController">
+                <viewController id="7HR-By-0ID" customClass="ThirdViewController" customModule="Waterboy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3TU-kz-Clr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -315,10 +319,10 @@ Russian Olympic Committee president Alexander Zhukov said the news was of the "u
             </objects>
             <point key="canvasLocation" x="2170.4000000000001" y="125.4872563718141"/>
         </scene>
-        <!--View Controller-->
+        <!--Fourth View Controller-->
         <scene sceneID="Vd4-sA-gK5">
             <objects>
-                <viewController id="13W-E4-P8e" sceneMemberID="viewController">
+                <viewController id="13W-E4-P8e" customClass="FourthViewController" customModule="Waterboy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MAd-cX-Icy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -399,10 +403,10 @@ I'm ready to make my mark.</string>
             </objects>
             <point key="canvasLocation" x="3012" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Fifth View Controller-->
         <scene sceneID="RDB-cZ-Gcg">
             <objects>
-                <viewController id="ZEj-ZJ-ZDd" sceneMemberID="viewController">
+                <viewController id="ZEj-ZJ-ZDd" customClass="FifthViewController" customModule="Waterboy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="soS-Qp-bbP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -500,7 +504,7 @@ I'm ready to make my mark.</string>
     <inferredMetricsTieBreakers>
         <segue reference="OF2-b4-Lg2"/>
         <segue reference="TxH-Y6-xBg"/>
-        <segue reference="kJO-m2-Gmw"/>
+        <segue reference="x1g-P3-dc9"/>
         <segue reference="RJ1-by-Pat"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721C6A22206075E000C57C06 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C6A21206075E000C57C06 /* SecondViewController.swift */; };
+		721C6A2420618A4900C57C06 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C6A2320618A4900C57C06 /* ThirdViewController.swift */; };
+		721C6A2620618AA300C57C06 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C6A2520618AA300C57C06 /* FourthViewController.swift */; };
+		721C6A2820618AE700C57C06 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C6A2720618AE700C57C06 /* FifthViewController.swift */; };
 		7274EFBB203E0F5B0012F276 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7274EFBA203E0F5B0012F276 /* Media.xcassets */; };
 		72C538E120217BF90045C8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C538E020217BF90045C8FF /* AppDelegate.swift */; };
 		72C538E320217BF90045C8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C538E220217BF90045C8FF /* ViewController.swift */; };
@@ -42,6 +46,10 @@
 /* Begin PBXFileReference section */
 		3B7299D95D864FCF4B508380 /* Pods-Waterboy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waterboy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Waterboy/Pods-Waterboy.release.xcconfig"; sourceTree = "<group>"; };
 		4F40D6579212B313807A1E31 /* Pods-Waterboy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waterboy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Waterboy/Pods-Waterboy.debug.xcconfig"; sourceTree = "<group>"; };
+		721C6A21206075E000C57C06 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		721C6A2320618A4900C57C06 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		721C6A2520618AA300C57C06 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		721C6A2720618AE700C57C06 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		7274EFBA203E0F5B0012F276 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		72C538DD20217BF90045C8FF /* Waterboy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waterboy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C538E020217BF90045C8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +107,10 @@
 			children = (
 				72C538E020217BF90045C8FF /* AppDelegate.swift */,
 				72C538E220217BF90045C8FF /* ViewController.swift */,
+				721C6A21206075E000C57C06 /* SecondViewController.swift */,
+				721C6A2320618A4900C57C06 /* ThirdViewController.swift */,
+				721C6A2520618AA300C57C06 /* FourthViewController.swift */,
+				721C6A2720618AE700C57C06 /* FifthViewController.swift */,
 				72C538E420217BF90045C8FF /* Main.storyboard */,
 				72C538E920217BF90045C8FF /* LaunchScreen.storyboard */,
 				72C538EC20217BF90045C8FF /* Info.plist */,
@@ -298,8 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721C6A2820618AE700C57C06 /* FifthViewController.swift in Sources */,
+				721C6A22206075E000C57C06 /* SecondViewController.swift in Sources */,
 				72C538E320217BF90045C8FF /* ViewController.swift in Sources */,
+				721C6A2420618A4900C57C06 /* ThirdViewController.swift in Sources */,
 				72C538E120217BF90045C8FF /* AppDelegate.swift in Sources */,
+				721C6A2620618AA300C57C06 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
