@@ -6,17 +6,173 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Waterboy/ViewController.swift"
-            timestampString = "543180642.0233231"
+            timestampString = "543304725.66326"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Waterboy/AppDelegate.swift"
+            timestampString = "543303784.008122"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Waterboy.AppDelegate.__deallocating_deinit"
+                  moduleName = "Waterboy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/poseymemishian/Documents/workspace/CS4279-Water-Boy/Waterboy/AppDelegate.swift"
+                  timestampString = "543301474.002051"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Waterboy.AppDelegate.__allocating_init() -&gt; Waterboy.AppDelegate"
+                  moduleName = "Waterboy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/poseymemishian/Documents/workspace/CS4279-Water-Boy/Waterboy/AppDelegate.swift"
+                  timestampString = "543301474.005767"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Waterboy.AppDelegate.init() -&gt; Waterboy.AppDelegate"
+                  moduleName = "Waterboy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/poseymemishian/Documents/workspace/CS4279-Water-Boy/Waterboy/AppDelegate.swift"
+                  timestampString = "543301474.008158"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Waterboy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/poseymemishian/Documents/workspace/CS4279-Water-Boy/Waterboy/AppDelegate.swift"
+                  timestampString = "543301474.010482"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Waterboy/AppDelegate.swift"
+            timestampString = "543303784.0081919"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Waterboy.AppDelegate.__deallocating_deinit"
+                  moduleName = "Waterboy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/poseymemishian/Documents/workspace/CS4279-Water-Boy/Waterboy/AppDelegate.swift"
+                  timestampString = "543301480.1918401"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Waterboy.AppDelegate.__allocating_init() -&gt; Waterboy.AppDelegate"
+                  moduleName = "Waterboy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/poseymemishian/Documents/workspace/CS4279-Water-Boy/Waterboy/AppDelegate.swift"
+                  timestampString = "543301480.194883"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Waterboy.AppDelegate.init() -&gt; Waterboy.AppDelegate"
+                  moduleName = "Waterboy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/poseymemishian/Documents/workspace/CS4279-Water-Boy/Waterboy/AppDelegate.swift"
+                  timestampString = "543301480.197633"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Waterboy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/poseymemishian/Documents/workspace/CS4279-Water-Boy/Waterboy/AppDelegate.swift"
+                  timestampString = "543301480.199664"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

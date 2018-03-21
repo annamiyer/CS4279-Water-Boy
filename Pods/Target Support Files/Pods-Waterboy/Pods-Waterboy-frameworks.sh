@@ -136,11 +136,15 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Reductio/Reductio.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftLinkPreview/SwiftLinkPreview.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Unirest/Unirest.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Reductio/Reductio.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftLinkPreview/SwiftLinkPreview.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Unirest/Unirest.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

@@ -6,4 +6,7 @@ target 'Waterboy' do
     pod 'Alamofire', '~> 4.7'
 	pod 'Unirest', '~> 1.1.3'
 	pod 'Reductio'
+	pod 'SwiftLinkPreview', '~> 2.2.0'
+	pod 'SwiftSoup'
 end
+

@@ -152,25 +152,21 @@
                                 <rect key="frame" x="16" y="62" width="343" height="573"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LeBron James in Free Agency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfv-aK-tr1">
-                                        <rect key="frame" x="16" y="21" width="311" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="KEH-sE-lIV">
                                         <rect key="frame" x="97" y="553" width="143" height="2"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </progressView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="Y3S-cZ-Zzx">
-                                        <rect key="frame" x="273" y="21" width="62" height="47"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIK-hl-qLD">
-                                        <rect key="frame" x="16" y="76" width="311" height="478"/>
+                                        <rect key="frame" x="13" y="104" width="311" height="441"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LeBron James in Free Agency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfv-aK-tr1">
+                                        <rect key="frame" x="16" y="8" width="311" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -186,7 +182,8 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="firstStory" destination="MIK-hl-qLD" id="67t-Jy-Vo8"/>
+                        <outlet property="firstStory" destination="MIK-hl-qLD" id="Qrt-3Z-uHm"/>
+                        <outlet property="massivetitle" destination="Lfv-aK-tr1" id="Ry3-Px-32H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3w-oR-i3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -499,10 +496,9 @@
         <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sUt-Qo-wmT"/>
         <segue reference="OF2-b4-Lg2"/>
-        <segue reference="iXh-NZ-pTi"/>
+        <segue reference="TxH-Y6-xBg"/>
         <segue reference="sBM-N1-3T7"/>
-        <segue reference="DOc-ZN-JdD"/>
+        <segue reference="RJ1-by-Pat"/>
     </inferredMetricsTieBreakers>
 </document>

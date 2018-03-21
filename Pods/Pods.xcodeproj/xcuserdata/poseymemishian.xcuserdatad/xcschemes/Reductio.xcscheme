@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3158207F597AD7FF3665B9787158084C"
+               BlueprintIdentifier = "60B43BD459C829190031166890053634"
                BlueprintName = "Reductio"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Reductio.framework">
