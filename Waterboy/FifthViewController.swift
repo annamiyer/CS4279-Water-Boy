@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import SwiftSoup
+import Alamofire
 class FifthViewController: UIViewController {
 
     @IBOutlet weak var ruleOfTheDay: UILabel!
@@ -19,17 +20,31 @@ class FifthViewController: UIViewController {
         funFact.numberOfLines = 0
         ruleOfTheDay.adjustsFontSizeToFitWidth = true
         funFact.adjustsFontSizeToFitWidth = true
-        var rule: String
-        rule = "College basketball plays two, 20-minute halves"
-        ruleOfTheDay.text = rule
-        var fact: String
-        fact = "Barry Bonds is the all-time homerun leader."
-        funFact.text = fact
+        
+        let url = URL(string: "https://www.factmonster.com/sports/sports-section/sports-superstitions")
+        let url2 = URL(string: "https://howtoadult.com/simple-basketball-rules-kids-4094.html")
+        DispatchQueue.main.async {
+            let html = try! String(contentsOf: url!, encoding: .utf8)
+            let html2 = try! String(contentsOf: url2!, encoding: .utf8)
 
-        // Do any additional setup after loading the view.
+        do {
+            let doc: Document = try SwiftSoup.parseBodyFragment(html)
+            let doc2: Document = try SwiftSoup.parseBodyFragment(html2)
+            let link: Element = try! doc.select("p").get(1)
+            let link2: Element = try! doc2.select("p").get(1)
+
+            print(link)
+            self.funFact.text = try link.text()
+            self.ruleOfTheDay.text = try link2.text()
+        } catch Exception.Error(let type, let message) {
+            print(message)
+        } catch {
+            print("error")
+        }
+
     }
     
-    override func didReceiveMemoryWarning() {
+        func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -45,4 +60,5 @@ class FifthViewController: UIViewController {
     }
     */
 
+}
 }

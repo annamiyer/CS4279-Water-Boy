@@ -25,8 +25,8 @@ class SecondViewController: UIViewController {
         text1 = "Boston Celtics point guard Kyrie Irving will not travel with the team as it begins its four-game trip so he can have a second opinion on his sore left knee.Celtics coach Brad Stevens made the announcement Tuesday and the team confirmed it in a tweet later.Irving has missed the Celtics' last three games and already has been ruled out for Tuesday's home game against Oklahoma City.He originally was diagnosed with tendinitis in his left knee and MRI results came back negative for any structural damage. Stevens did leave the door open to the possibility of Irving rejoining the team on the trip, depending on the results of the exam and how he's recovering. In his first season with the Celtics after being acquired from Cleveland, Irving is averaging 24.4 points and 5.1 assists in 60 games."
         
         Reductio.summarize(text: text1, compression: 0.50) { (phrases) in
-            firstStory.text = phrases.description
-            print(phrases)
+          //  firstStory.text = phrases.description
+         //   print(phrases)
         }
         
         let url = URL(string: "https://www.usatoday.com/story/sports/nba/celtics/2018/03/20/kyrie-irving-boston-celtics-knee-second-opinion/443921002/")
@@ -38,10 +38,19 @@ class SecondViewController: UIViewController {
                         let doc = try SwiftSoup.parse(htmlContent as! String)
                         do{
                             let element = try doc.select("title").first()
+                            var text = try doc.select("p").array()
+                            var text1 = try text[19].text()
+                            for i in 20...25{
+                                let result = try text[i].append(text1).text()
+                                let r = try text[i]
+                                text1 = result
+                            }
+                            print(text1)
+                            self.firstStory.text = text1
                             
                             do {
                                 let text = try element?.text()
-                                print (text)
+                           //    print (text)
                                 self.massivetitle.text=text
                             }catch {
                                 
