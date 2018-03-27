@@ -9,6 +9,9 @@
 import UIKit
 import SwiftSoup
 import Alamofire
+import AWSCore
+import AWSDynamoDB
+
 class FifthViewController: UIViewController {
 
     @IBOutlet weak var ruleOfTheDay: UILabel!

@@ -8,6 +8,8 @@
 
 import UIKit
 import Reductio
+import AWSCore
+import AWSDynamoDB
 
 class ThirdViewController: UIViewController {
     @IBOutlet weak var secondStory: UILabel!

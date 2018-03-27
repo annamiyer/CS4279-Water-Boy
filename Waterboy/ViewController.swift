@@ -11,6 +11,8 @@ import Alamofire
 import Unirest
 import Reductio
 import SwiftSoup
+import AWSCore
+import AWSDynamoDB
 
 class ViewController: UIViewController {
 

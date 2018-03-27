@@ -346,17 +346,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TWy-Xc-fOc">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TWy-Xc-fOc">
                                 <rect key="frame" x="112" y="602" width="150" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="uuE-v2-dP8">
                                 <rect key="frame" x="16" y="67" width="84" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Third Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxG-Wt-obU">
-                                <rect key="frame" x="16" y="148" width="343" height="475"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Third Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxG-Wt-obU">
+                                <rect key="frame" x="16" y="117" width="343" height="477"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -364,6 +362,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ZxG-Wt-obU" firstAttribute="centerX" secondItem="MAd-cX-Icy" secondAttribute="centerX" id="D1h-MP-xmT"/>
+                            <constraint firstItem="TWy-Xc-fOc" firstAttribute="centerY" secondItem="MAd-cX-Icy" secondAttribute="centerY" constant="269.5" id="Gop-gy-2vU"/>
+                            <constraint firstItem="TWy-Xc-fOc" firstAttribute="centerX" secondItem="MAd-cX-Icy" secondAttribute="centerX" id="HgX-rl-Mkd"/>
+                            <constraint firstItem="ZxG-Wt-obU" firstAttribute="centerY" secondItem="MAd-cX-Icy" secondAttribute="centerY" constant="30" id="Q44-I5-arM"/>
+                            <constraint firstItem="TWy-Xc-fOc" firstAttribute="centerY" secondItem="MAd-cX-Icy" secondAttribute="centerY" constant="150" id="dQn-fh-Td0"/>
+                            <constraint firstItem="TWy-Xc-fOc" firstAttribute="centerX" secondItem="MAd-cX-Icy" secondAttribute="centerX" id="got-3o-kdm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="n03-oG-bfy"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="2x1-Lj-4RK" appends="YES" id="EkT-6p-w3s"/>
@@ -496,9 +502,9 @@
         <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OF2-b4-Lg2"/>
-        <segue reference="TxH-Y6-xBg"/>
+        <segue reference="B4w-Iz-sM1"/>
+        <segue reference="iXh-NZ-pTi"/>
         <segue reference="sBM-N1-3T7"/>
-        <segue reference="RJ1-by-Pat"/>
+        <segue reference="s3e-4H-0Fa"/>
     </inferredMetricsTieBreakers>
 </document>

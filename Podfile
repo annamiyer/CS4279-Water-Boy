@@ -8,5 +8,7 @@ target 'Waterboy' do
 	pod 'Reductio'
 	pod 'SwiftLinkPreview', '~> 2.2.0'
 	pod 'SwiftSoup'
-end
+	pod 'AWSMobileClient', '~> 2.6.13'
+	pod 'AWSDynamoDB', '~> 2.6.13'
+end	
 

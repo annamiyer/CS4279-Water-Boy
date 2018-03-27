@@ -9,6 +9,9 @@
 import UIKit
 import Reductio
 import SwiftSoup
+import AWSCore
+import AWSDynamoDB
+
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var firstStory: UILabel!
