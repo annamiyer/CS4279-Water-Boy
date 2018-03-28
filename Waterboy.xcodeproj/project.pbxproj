@@ -11,6 +11,8 @@
 		721C6A2420618A4900C57C06 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C6A2320618A4900C57C06 /* ThirdViewController.swift */; };
 		721C6A2620618AA300C57C06 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C6A2520618AA300C57C06 /* FourthViewController.swift */; };
 		721C6A2820618AE700C57C06 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C6A2720618AE700C57C06 /* FifthViewController.swift */; };
+		72259F09206C323800A051DE /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 72259F08206C323800A051DE /* awsconfiguration.json */; };
+		72259F0B206C327A00A051DE /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72259F0A206C327A00A051DE /* Articles.swift */; };
 		7274EFBB203E0F5B0012F276 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7274EFBA203E0F5B0012F276 /* Media.xcassets */; };
 		72C538E120217BF90045C8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C538E020217BF90045C8FF /* AppDelegate.swift */; };
 		72C538E320217BF90045C8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C538E220217BF90045C8FF /* ViewController.swift */; };
@@ -50,6 +52,8 @@
 		721C6A2320618A4900C57C06 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		721C6A2520618AA300C57C06 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		721C6A2720618AE700C57C06 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		72259F08206C323800A051DE /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		72259F0A206C327A00A051DE /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		7274EFBA203E0F5B0012F276 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		72C538DD20217BF90045C8FF /* Waterboy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waterboy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C538E020217BF90045C8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 		72C538DF20217BF90045C8FF /* Waterboy */ = {
 			isa = PBXGroup;
 			children = (
+				72259F0A206C327A00A051DE /* Articles.swift */,
+				72259F08206C323800A051DE /* awsconfiguration.json */,
 				72C538E020217BF90045C8FF /* AppDelegate.swift */,
 				72C538E220217BF90045C8FF /* ViewController.swift */,
 				721C6A21206075E000C57C06 /* SecondViewController.swift */,
@@ -232,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72259F09206C323800A051DE /* awsconfiguration.json in Resources */,
 				72C538EB20217BF90045C8FF /* LaunchScreen.storyboard in Resources */,
 				7274EFBB203E0F5B0012F276 /* Media.xcassets in Resources */,
 				72C538E620217BF90045C8FF /* Main.storyboard in Resources */,
@@ -322,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72259F0B206C327A00A051DE /* Articles.swift in Sources */,
 				721C6A2820618AE700C57C06 /* FifthViewController.swift in Sources */,
 				721C6A22206075E000C57C06 /* SecondViewController.swift in Sources */,
 				72C538E320217BF90045C8FF /* ViewController.swift in Sources */,
