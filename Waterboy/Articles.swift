@@ -15,27 +15,35 @@ import Foundation
 import UIKit
 import AWSDynamoDB
 
-class Articles: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
+class WaterboyArticles: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     var _userId: String?
-    var _title: String?
-    var _uRL: String?
+    var _sport: String?
+    var _articleLink: String?
+    var _articleName: String?
     
     class func dynamoDBTableName() -> String {
-
-        return "waterboy-mobilehub-1881338416-Articles"
+        
+        return "waterboy-mobilehub-1881338416-WaterboyArticles"
     }
     
     class func hashKeyAttribute() -> String {
-
+        
         return "_userId"
+    }
+    
+    class func rangeKeyAttribute() -> String {
+        
+        return "_sport"
     }
     
     override class func jsonKeyPathsByPropertyKey() -> [AnyHashable: Any] {
         return [
-               "_userId" : "userId",
-               "_title" : "Title",
-               "_uRL" : "URL",
+            "_userId" : "userId",
+            "_sport" : "Sport",
+            "_articleLink" : "ArticleLink",
+            "_articleName" : "ArticleName",
         ]
     }
 }
+
