@@ -21,10 +21,11 @@ class WaterboyArticles: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     var _sport: String?
     var _articleLink: String?
     var _articleName: String?
-    
+        
     class func dynamoDBTableName() -> String {
         
-        return "waterboy-mobilehub-1881338416-WaterboyArticles"
+        //return "waterboy-mobilehub-1881338416-WaterboyArticles"
+        return "WaterboyArticles"
     }
     
     class func hashKeyAttribute() -> String {
@@ -33,8 +34,9 @@ class WaterboyArticles: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     }
     
     class func rangeKeyAttribute() -> String {
-        
+        print("_sport")
         return "_sport"
+        
     }
     
     override class func jsonKeyPathsByPropertyKey() -> [AnyHashable: Any] {

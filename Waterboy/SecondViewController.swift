@@ -27,8 +27,9 @@ class SecondViewController: UIViewController {
         var todayDate = Calendar.autoupdatingCurrent
         var resultURL : String
         var resultTitle :String
-        
-        
+        massivetitle.font = UIFont.boldSystemFont(ofSize: 18.0)
+       // massivetitle.frame.origin = CGPoint(x: x, y: y)
+
         /*dynamoDBObjectMapper.load(WaterboyArticles.self, hashKey: todayDate, rangeKey:nil).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
             if let error = task.error as? NSError {
                 print("The request failed. Error: \(error)")
