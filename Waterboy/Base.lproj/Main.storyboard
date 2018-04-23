@@ -89,6 +89,13 @@
                                     <constraint firstAttribute="width" constant="99" id="t6K-bT-88l"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gOY-tr-Idw">
+                                <rect key="frame" x="28" y="560" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -115,6 +122,7 @@
                     <navigationItem key="navigationItem" id="P9z-zG-BfT"/>
                     <connections>
                         <outlet property="datePicker" destination="wha-bk-Cbu" id="Vfx-jw-26t"/>
+                        <outlet property="textField" destination="gOY-tr-Idw" id="NL2-SB-DbL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -171,6 +179,13 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-aP-YOp">
+                                        <rect key="frame" x="29" y="464" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -184,6 +199,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="SZj-sv-m0k"/>
                     <connections>
+                        <outlet property="datePasser" destination="bcf-aP-YOp" id="TMh-DZ-O9s"/>
                         <outlet property="firstStory" destination="MIK-hl-qLD" id="Qrt-3Z-uHm"/>
                         <outlet property="massivetitle" destination="Lfv-aK-tr1" id="Ry3-Px-32H"/>
                     </connections>
@@ -270,6 +286,13 @@
                                         <color key="textColor" red="0.040701176649999997" green="0.33079503719999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdV-sK-EQw">
+                                        <rect key="frame" x="80" y="472" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drv-d0-K3j">
@@ -290,6 +313,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="datePasser" destination="fdV-sK-EQw" id="CMG-63-KgF"/>
                         <outlet property="secondStory" destination="bEu-gt-vOY" id="yhW-a7-jVI"/>
                         <outlet property="secondtitle" destination="drv-d0-K3j" id="uvh-8J-VSr"/>
                     </connections>
@@ -361,6 +385,13 @@
                                         <color key="textColor" red="0.0" green="0.22059515160000001" blue="0.45958144429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DWQ-o7-5SE">
+                                        <rect key="frame" x="96" y="433" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -373,6 +404,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="datePasser" destination="DWQ-o7-5SE" id="LtS-FJ-4Aj"/>
                         <outlet property="storytitle" destination="dP5-6j-yHt" id="QG4-eK-QEY"/>
                         <outlet property="thirdStory" destination="ZxG-Wt-obU" id="mIe-Wn-eu5"/>
                     </connections>
@@ -499,9 +531,9 @@
         <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OF2-b4-Lg2"/>
+        <segue reference="B4w-Iz-sM1"/>
         <segue reference="TxH-Y6-xBg"/>
-        <segue reference="x1g-P3-dc9"/>
-        <segue reference="RJ1-by-Pat"/>
+        <segue reference="sBM-N1-3T7"/>
+        <segue reference="s3e-4H-0Fa"/>
     </inferredMetricsTieBreakers>
 </document>

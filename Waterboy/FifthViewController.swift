@@ -17,12 +17,47 @@ class FifthViewController: UIViewController {
     @IBOutlet weak var ruleOfTheDay: UILabel!
     @IBOutlet weak var funFact: UILabel!
 
+    var dateString = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ruleOfTheDay.numberOfLines = 0
         funFact.numberOfLines = 0
         ruleOfTheDay.adjustsFontSizeToFitWidth = true
         funFact.adjustsFontSizeToFitWidth = true
+        print(dateString)
+        let sheetNumber4 = (Int(dateString)! - 1)
+        let sheetString4 = String(sheetNumber4)
+        let ruleURL = "https://sheets.googleapis.com/v4/spreadsheets/1iGIyo-q-gbKenMFKVDoO9UCHIEZukVlm7JAZokPy8dE/values/G" + sheetString4 + "%3AG" + sheetString4 + "?key=AIzaSyA47HxY_lhwJGKL-OV1ixJZ2fFjRiaVYLI"
+        
+        Alamofire.request(ruleURL, parameters: nil, encoding: JSONEncoding.default, headers:nil).responseString { response in
+            if let result = response.result.value {
+                let result1 = String(result.characters.dropFirst(78))
+                let result2 = String(result1.characters.dropLast(9))
+                let trimmed = result2.replacingOccurrences(of: "[[\"\\]]", with: "", options: .regularExpression)
+                let trimmed2 = trimmed.replacingOccurrences(of: "\"", with: "")
+                let trimmed3 = trimmed2.replacingOccurrences(of: "\\", with: "")
+                self.ruleOfTheDay.numberOfLines = 0
+                self.ruleOfTheDay.adjustsFontSizeToFitWidth = true
+                self.ruleOfTheDay.text = trimmed3
+            }
+        }
+        
+        let factURL = "https://sheets.googleapis.com/v4/spreadsheets/1iGIyo-q-gbKenMFKVDoO9UCHIEZukVlm7JAZokPy8dE/values/G" + dateString + "%3AG" + dateString + "?key=AIzaSyA47HxY_lhwJGKL-OV1ixJZ2fFjRiaVYLI"
+        
+        Alamofire.request(factURL, parameters: nil, encoding: JSONEncoding.default, headers:nil).responseString { response in
+            if let result = response.result.value {
+                let result1 = String(result.characters.dropFirst(78))
+                let result2 = String(result1.characters.dropLast(9))
+                let trimmed = result2.replacingOccurrences(of: "[[\"\\]]", with: "", options: .regularExpression)
+                let trimmed2 = trimmed.replacingOccurrences(of: "\"", with: "")
+                let trimmed3 = trimmed2.replacingOccurrences(of: "\\", with: "")
+                self.funFact.numberOfLines = 0
+                self.funFact.adjustsFontSizeToFitWidth = true
+                self.funFact.text = trimmed3
+            }
+        }
+        
         
         let url = URL(string: "https://www.factmonster.com/sports/sports-section/sports-superstitions")
         let url2 = URL(string: "https://howtoadult.com/simple-basketball-rules-kids-4094.html")
@@ -37,8 +72,8 @@ class FifthViewController: UIViewController {
             let link2: Element = try! doc2.select("p").get(1)
 
             print(link)
-            self.funFact.text = try link.text()
-            self.ruleOfTheDay.text = try link2.text()
+            //self.funFact.text = try link.text()
+            //self.ruleOfTheDay.text = try link2.text()
         } catch Exception.Error(let type, let message) {
             print(message)
         } catch {
