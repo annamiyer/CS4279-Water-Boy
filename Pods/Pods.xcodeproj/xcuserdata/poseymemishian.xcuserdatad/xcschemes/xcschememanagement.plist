@@ -7,7 +7,7 @@
 		<key>AWSAuthCore.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>7</integer>
 		</dict>
 		<key>AWSCore.xcscheme</key>
 		<dict>

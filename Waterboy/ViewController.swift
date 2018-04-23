@@ -17,6 +17,13 @@ import AWSDynamoDB
 class ViewController: UIViewController {
 
   @IBOutlet weak var datePicker: UIDatePicker!
+    
+    @objc func dateChanged(_ sender: UIDatePicker) {
+        let componenets = Calendar.current.dateComponents([.year, .month, .day], from: sender.date)
+        if let day = componenets.day, let month = componenets.month, let year = componenets.year {
+            print("\(month) \(day) \(year)")
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,6 +37,10 @@ class ViewController: UIViewController {
         
         datePicker.minimumDate = minDate
         datePicker.maximumDate = maxDate
+        
+    //gets date component
+        datePicker.addTarget(self, action: #selector(ViewController.dateChanged(_:)), for: .valueChanged)
+        
         
         let url = URL(string: "https://www.usatoday.com/story/sports/nba/celtics/2018/03/20/kyrie-irving-boston-celtics-knee-second-opinion/443921002/")
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
@@ -46,7 +57,7 @@ class ViewController: UIViewController {
                         let element = try doc.select("title").first()
                         do {
                             let text = try element?.text()
-                            print (text)
+                        //    print (text)
                         }catch {
                             
                         }
