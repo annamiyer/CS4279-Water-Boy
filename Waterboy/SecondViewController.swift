@@ -9,47 +9,57 @@
 import UIKit
 import Reductio
 import SwiftSoup
-import AWSCore
-import AWSDynamoDB
+import Alamofire
+//import GoogleAPIClientForREST
 
 class SecondViewController: UIViewController {
-
+    
     @IBOutlet weak var firstStory: UILabel!
     @IBOutlet weak var massivetitle: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         firstStory.numberOfLines = 0
         firstStory.adjustsFontSizeToFitWidth = true
         massivetitle.numberOfLines=0
         massivetitle.adjustsFontSizeToFitWidth = true
         var text1: String
-        var todayDate = Calendar.autoupdatingCurrent
-        var resultURL : String
-        var resultTitle :String
         massivetitle.font = UIFont.boldSystemFont(ofSize: 18.0)
-       // massivetitle.frame.origin = CGPoint(x: x, y: y)
-
-        /*dynamoDBObjectMapper.load(WaterboyArticles.self, hashKey: todayDate, rangeKey:nil).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
-            if let error = task.error as? NSError {
-                print("The request failed. Error: \(error)")
-            } else if let resultBook = task.result as? Book {
-                resultURL = task.result
-                resultTitle = task.result
-                // Do something with task.result.
+        
+        let url2 = "https://sheets.googleapis.com/v4/spreadsheets/1iGIyo-q-gbKenMFKVDoO9UCHIEZukVlm7JAZokPy8dE/values/C2%3AC2?key=AIzaSyA47HxY_lhwJGKL-OV1ixJZ2fFjRiaVYLI"
+        
+        
+        Alamofire.request(url2, parameters: nil, encoding: JSONEncoding.default, headers:nil).responseString { response in
+            if let result = response.result.value {
+                let result1 = String(result.characters.dropFirst(78))
+                let result2 = String(result1.characters.dropLast(9))
+                let trimmed = result2.replacingOccurrences(of: "[[\"\\]]", with: "", options: .regularExpression)
+                let trimmed2 = trimmed.replacingOccurrences(of: "\"", with: "")
+                let trimmed3 = trimmed2.replacingOccurrences(of: "\\", with: "")
+                
+                self.firstStory.text = trimmed3
             }
-            return nil
-        })
-        */
+        }
         
+        let url3 = "https://sheets.googleapis.com/v4/spreadsheets/1iGIyo-q-gbKenMFKVDoO9UCHIEZukVlm7JAZokPy8dE/values/A2%3AA2?key=AIzaSyA47HxY_lhwJGKL-OV1ixJZ2fFjRiaVYLI"
         
+        Alamofire.request(url3, parameters: nil, encoding: JSONEncoding.default, headers:nil).responseString { response in
+            if let titleResult = response.result.value {
+                var result1 = String(titleResult.characters.dropFirst(78))
+                var result2 = String(result1.characters.dropLast(9))
+                let trimmed = result2.replacingOccurrences(of: "\"", with: "")
+                print(result2)
+                self.massivetitle.text = trimmed
+            }
+        }
         
-
         text1 = "Boston Celtics point guard Kyrie Irving will not travel with the team as it begins its four-game trip so he can have a second opinion on his sore left knee.Celtics coach Brad Stevens made the announcement Tuesday and the team confirmed it in a tweet later.Irving has missed the Celtics' last three games and already has been ruled out for Tuesday's home game against Oklahoma City.He originally was diagnosed with tendinitis in his left knee and MRI results came back negative for any structural damage. Stevens did leave the door open to the possibility of Irving rejoining the team on the trip, depending on the results of the exam and how he's recovering. In his first season with the Celtics after being acquired from Cleveland, Irving is averaging 24.4 points and 5.1 assists in 60 games."
         
         Reductio.summarize(text: text1, compression: 0.50) { (phrases) in
-          //  firstStory.text = phrases.description
-         //   print(phrases)
+            //  firstStory.text = phrases.description
+            //   print(phrases)
         }
         
         let url = URL(string: "https://www.usatoday.com/story/sports/nba/celtics/2018/03/20/kyrie-irving-boston-celtics-knee-second-opinion/443921002/")
@@ -69,12 +79,12 @@ class SecondViewController: UIViewController {
                                 text1 = result
                             }
                             print(text1)
-                            self.firstStory.text = text1
+                            //self.firstStory.text = text1
                             
                             do {
                                 let text = try element?.text()
-                           //    print (text)
-                                self.massivetitle.text=text
+                                //    print (text)
+                                //self.massivetitle.text=text
                             }catch {
                                 
                             }
@@ -89,29 +99,15 @@ class SecondViewController: UIViewController {
             }
             else{
                 print(error)
-                
             }
         }
-        
         task.resume()
-        
-        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
